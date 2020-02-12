@@ -1,0 +1,29 @@
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+body{
+  background-color: #C5E4E7;
+
+}
+
+ #warningMessage{
+  color:#C50315;
+}
+
+.centered-wrapper{
+  border: 5px dotted grey;
+  border-radius: 15%;
+  padding: 15px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.centered-content {
+    display: inline-block;
+    vertical-align: middle;
+}

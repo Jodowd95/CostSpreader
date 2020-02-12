@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Cost Spreader</title>
+  </head>
+  <body >
+    <div class="centered-wrapper">
+      <div class="centered-content">
+        <h1>Cost Spreader</h1>
+        <p>Use the below forms to quickly find out how to spread cost across multiple objects
+        <br />
+        <br />
+        This can only calculate accurately up to Fee = Number*100
+      </p>
+        <form>	
+          <input type="number" id="allocation" placeholder="Insert Fee" >
+          <input type="number" id="count" placeholder="Number of objects" >
+          <br>
+          <button type="button" name="submit" onclick="submitT()">Calculate</button>
+        </form>
+        <p id="warningMessage"></p>
+      <hr>
+      <div class="centered-content">
+        <table id="data" class="display" width = "100">
+        <thead>
+          <th>Results</th>
+          <th>Normal Cost</th>
+          <th>Augmented Cost</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              Amount
+            </th>
+            <td id="regularAllocation">0</td>
+            <td id="regularAllocationPlusOne">0</td>
+          </tr>
+          <tr>
+            <th>
+              Count
+            </th>
+            <td id="neededAllocations">0</td>
+            <td id="neededPlusOneAllocations">0</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+
+
+      </div>
+
+    </div>
+
+  </body>
+    <script src="script.js"></script>
+</html>
